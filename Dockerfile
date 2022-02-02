@@ -6,7 +6,8 @@ RUN pip install --no-cache-dir --upgrade pytest
 RUN pip install --no-cache-dir --upgrade pytest-playwright
 RUN pip install --no-cache-dir --upgrade allure-pytest
 
-RUN python -m playwright install # Install and Update browsers
+# Install and Update browsers
+RUN python -m playwright install 
 
 RUN apt-get update
 RUN apt-get install -y unzip
