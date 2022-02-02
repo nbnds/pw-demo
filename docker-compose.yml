@@ -3,7 +3,7 @@ services:
     image: playwright-pytest-demo
     build:
       context: .
-      dockerfile: dockerfile
+      dockerfile: Dockerfile
     volumes:
       - ./tests:/tests
       - ./allure-results:/allure-results
