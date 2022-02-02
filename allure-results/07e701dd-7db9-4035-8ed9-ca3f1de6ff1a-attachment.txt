@@ -1,0 +1,1 @@
+WARNING  asyncio:unix_events.py:1334 Loop <_UnixSelectorEventLoop running=False closed=True debug=False> that handles pid 10 is closed

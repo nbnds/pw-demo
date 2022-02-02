@@ -1,4 +1,4 @@
-from mcr.microsoft.com/playwright:v1.18.0-focal
+FROM mcr.microsoft.com/playwright:v1.18.0-focal
 
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir --upgrade playwright
