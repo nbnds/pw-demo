@@ -1,0 +1,17 @@
+services:
+  playwright-pytest:
+    image: playwright-pytest-demo
+    build:
+      context: .
+      dockerfile: dockerfile
+    volumes:
+      - ./tests:/tests
+      - ./allure-results:/allure-results
+      - ./allure-report:/allure-report
+    ports:
+      - "8085:8085"
+    command: >
+      bash -c "python -m pytest --alluredir=/allure-results
+      && /allure/bin/allure generate /allure-results --clean -o /allure-report
+      && cp -R -u /allure-report/history/* /allure-results/history/
+      && /allure/bin/allure open /allure-report/ -p 8085"
