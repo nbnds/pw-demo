@@ -1,2 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Wed Feb 02 05:06:05 UTC 2022","Wed Feb 02 05:06:07 UTC 2022","1705","","test_example","","","","test_open_playwright_site[chromium]",""
