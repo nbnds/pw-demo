@@ -1,3 +1,5 @@
-/allure-report
-/allure-results
+/allure-report/*
+/allure-results/*
+/allure-results/history/*
+!/allure-results/history
 /tests/__pycache__
