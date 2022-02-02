@@ -12,9 +12,13 @@ RUN apt-get update
 RUN apt-get install -y unzip
 RUN apt-get install -y openjdk-11-jre-headless
 
-WORKDIR /tests # set working directory
-ENV ALLURE_VER '2.17.2' # set variable for allure version to download
+# set working directory
+WORKDIR /tests 
 
+# set variable for allure version to download
+ENV ALLURE_VER "2.17.2" 
+
+# get allure commandline executable and unzip it
 RUN wget -O allure-commandline.zip https://github.com/allure-framework/allure2/releases/download/${ALLURE_VER}/allure-${ALLURE_VER}.zip
 RUN unzip allure-commandline.zip -d /allure
 RUN mv /allure/allure-${ALLURE_VER}/* /allure
